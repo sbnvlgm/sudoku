@@ -1,5 +1,5 @@
 node ('agent1'){
-    def app
+    def app:
     stage('Cloning Git'){
         chekout scm
     }
