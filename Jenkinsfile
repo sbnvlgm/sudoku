@@ -11,8 +11,8 @@ node ('agent1'){
             app.push("latest")
         }
     }
-    stage('Push-image-server'){
-        sh "docker-compose down"
-        sh "docker-compose up -d"
+    stage('Pull-image-server'){
+        sh "sudo docker-compose down"
+        sh "sudo docker-compose up -d"
     }
 }
